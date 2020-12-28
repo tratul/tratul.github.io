@@ -154,7 +154,7 @@
 
                   <div class="block end" style="text-align: center">
                     <ul class="info-list">
-                      <li><span class="title">Age</span><span class="value">23</span></li>
+                      <li><span class="title">Age</span><span class="value" id="age"></span></li>
                       <li><span class="title">Address</span><span class="value">6B, House:15, Road:14, Nikunjjo-2, Khilkhet, Dhaka-1229</span></li>
                       <li><span class="title">e-mail</span><span class="value"><a href="https://lmpixels.com/cdn-cgi/l/email-protection#96f3fbf7fffad6f3eef7fbe6faf3b8f5f9fb"><span class="__cf_email__" data-cfemail="91f4fcf0f8fdd1f4e9f0fce1fdf4bff2fefc">mahmudulhasan661@gmail.com</span></a></span></li>
                       <li><span class="title">Phone</span><span class="value">+8801 682 927 466</span></li>
@@ -1018,6 +1018,15 @@
     <!-- Demo Color changer Script -->
     <script src="preview/lmpixels-demo-panel.js"></script>
     <!-- /Demo Color changer Script -->
+    <script type="text/javascript">
+      var birthdate = new Date("1997/1/28");
+      var cur = new Date();
+      var diff = cur-birthdate; // This is the difference in milliseconds
+      var age = Math.floor(diff/31557600000); // Divide by 1000*60*60*24*365.25
+      //console.log(age);
+      document.getElementById("age").innerHTML = age;
+
+    </script>
   </body>
 
 <!-- Mirrored from lmpixels.com/demo/sunshine-demo/sunshine-version-2/sunshine-html-template-blue/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Jan 2019 15:42:24 GMT -->
